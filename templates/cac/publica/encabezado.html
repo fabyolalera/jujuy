@@ -1,0 +1,31 @@
+<nav class="nav-menu">
+    <div class="logo">
+        {% comment "" %}
+        <a class="logo-a" href="index.html"><img class="icono" src="icono.png" alt="" >JUJUY</a>
+         {% endcomment %} 
+        <!-- <input type="checkbox" id="menu-bar">
+                <label class="menu-icon" for="menu-bar"></label> -->
+    </div>
+    
+    <ul class="menu-ul" id="menu">
+            
+        <li class="lista"><a href="{% url 'inicio' %}">INICIO</a></li>
+        <li class="lista"><a href="{% url 'proyectos_puna' %}">PUNA</a></li>
+
+        <li class="lista"><a href="{% url 'cursos_quebrada' %}">QUEBRADA</a></li>
+        <li class="lista"><a href="{% url 'cursos_yunga' %}">YUNGA</a></li>
+        <li class="lista"><a href="{% url 'cursos_valle' %}">VALLE</a></li>
+        
+        <li class="lista"><a href="{% url 'contacto' %}">CONTACTO</a></li>
+       
+        <!-- <li class="lista izq"><a href="javascript:void(0);" class="icon-menu" onclick="funcion()">
+            <i class="fa-solid fa-bars"></i></a>
+        </li> -->
+    </ul>
+    <div class="menu-div" id="boton-menu">
+        <div class="menu-linea"></div>
+        <div class="menu-linea"></div>
+        <div class="menu-linea"></div>
+    </div>
+       
+</nav>    

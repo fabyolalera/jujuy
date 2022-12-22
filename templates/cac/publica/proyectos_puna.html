@@ -1,0 +1,66 @@
+{% extends './base.html' %}
+
+{% block titulo %}Cursos{% endblock titulo %}
+{% block contenidoRegiones %}
+<section class="portadaPuna">
+        
+    <div class="contenedor-portada" >
+        <h2><b>LAGUNA DE POZUELOS</b></h2>
+        <p><b> Monumento Natural Laguna de los Pozuelos</b></p>
+    </div>
+
+</section>
+{% endblock contenidoRegiones %}
+
+{% block contenido %}
+
+<section class="container jujuy">
+    <h2 class="h-titulo">PUNA</h2>
+    <p>"Puna es esplendor, cielos infinitos
+         de aire puro y extensas planicies 
+         de altura a más de 3600 msnm, 
+         donde habita gente tranquila y apacible que resguarda sus costumbres
+          ancestrales. Es territorio de llamas, guanacos y vicuñas que se avistan 
+          desde las rutas."</p>
+</section>
+<div class="regiones">
+    <article class="articulo">
+        <p>   La Puna ofrece hermosos paisajes de salinas, estepas, planicies altiplánicas 
+            y lagunas rodeadas por montañas, como la de Pozuelos, situada a 3.600 m.s.n.m. 
+            Esta laguna fue declarada Reserva de la Biosfera y su principal tesoro está 
+            formado por la gran cantidad de aves que habitan en su entorno. Entre su avifauna 
+            se cuentan tres diferentes especies de flamencos y parinas. La soledad y la aridez 
+            de este «desierto de altura» se interrumpe de tanto en tanto con pequeños oasis que 
+            matizan, con su diversidad biológica, la monotonía del paisaje.
+        </p>
+        <p>
+            Subiendo por la Cuesta de Lipán, sucesivas curvas van abriendo camino a un paisaje 
+            de belleza incomparable, hasta alcanzar las Salinas Grandes, deslumbrante manto 
+            blanco que ofrece un panorama pleno de magia y de color.
+        </p>
+        <p>
+            Susques, en plena estepa andina, atesora su antiquísima Iglesia del año 1.598 
+            realizada íntegramente en piedra, barro y adobe, en la que se encuentran 
+            importantes muestras de arte cuzqueño.
+
+        </p>
+        <p>
+            La Puna acoge una sucesión de paisajes naturales y de formas caprichosas, 
+            y en su corazón anida Casabindo, con su Iglesia Catedral de la Puna. 
+            Allí, cada 15 de agosto, se realiza el antiguo ritual del Toreo de la 
+            Vincha en honor a la Virgen de la Asunción.
+        </p>
+    </article>
+    <div id="divProyectosPuna">
+        
+    </div>
+
+
+{% endblock contenido %}
+
+{% block javascript %}
+{% load static %}
+<script src="{% static '/cac/publica/js/proyectosPuna.js'%}"></script>
+
+
+{% endblock %}

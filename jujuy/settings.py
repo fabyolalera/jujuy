@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cac'
+    'cac',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'jujuy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,8 +78,12 @@ WSGI_APPLICATION = 'jujuy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cac_jujuy2', 
+        'USER': 'postgres', 
+        'PASSWORD': 'chimborazo130',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
     }
 }
 
@@ -120,7 +126,26 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#El debug true, buscar un directorio static dentro del proyecto
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+
+#esto se genera en producción y es la que deberemos 
+#crear y django ira a buscar ahi 
+#python manage.py collectstatic
+STATIC_ROOT = BASE_DIR / 'static_root'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#donde vamos a ir guardar los archivos medias debug
+MEDIA_URL = "/media/"
+#media para produccion
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+#constante para poder almacenar los mensaje entre solicitudes en cookies
+#https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#configuring-the-message-engine
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'

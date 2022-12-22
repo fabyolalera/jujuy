@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <link rel="icon" href="icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@400;500;600;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/cac/publica/css/style.css'%}?v={% now 'U' %}">  
+    <script src="https://kit.fontawesome.com/dff186cd54.js" crossorigin="anonymous"></script>
+
+    <title>CONOCIENDO JUJUY</title>
+</head>
+<body>
+    <header id="encabezado">
+        <!-- <div class="contenedor-header"> -->
+         <nav class="nav-menu">
+             <div class="logo">
+                {% comment "" %}
+                 <a class="logo-a" href="index.html"><img class="icono" src="icono.png" alt="" >JUJUY</a>
+                {% endcomment %} 
+                   <!-- <input type="checkbox" id="menu-bar">
+                         <label class="menu-icon" for="menu-bar"></label> -->
+             </div>
+             
+             <ul class="menu-ul" id="menu">
+                     
+                <li class="lista"><a href="{% url 'inicio' %}">INICIO</a></li>
+                 
+                <li class="lista"><a href="{% url 'proyectos_puna' %}">PUNA</a></li>
+                 
+                <li class="lista"><a href="{% url 'cursos_quebrada' %}">QUEBRADA</a></li>
+                <li class="lista"><a href="{% url 'cursos_yunga' %}">YUNGA</a></li>
+                <li class="lista"><a href="{% url 'cursos_valle' %}">VALLE</a></li>
+                 
+                <li class="lista"><a href="{% url 'contacto' %}">CONTACTO</a></li>
+             </ul>
+             <div class="menu-div" id="boton-menu">
+                 <div class="menu-linea"></div>
+                 <div class="menu-linea"></div>
+                 <div class="menu-linea"></div>
+             </div>
+                
+         </nav>    
+ 
+    </header>
+    <section class="portada">
+      
+        <div class="contenedor-portada">
+            <h2>SALINAS GRANDES DE JUJUY</h2>
+            <p>Maravilla Natural de la Argentina</p>
+        </div>
+
+    </section>
+
+    <main class="principal">
+        <section class="container jujuy">
+            <h2 class="h-titulo">JUJUY</h2>
+            <p>"Del azul intenso del cielo de la Puna al verde espeso de las Yungas y de los colores de la 
+                Quebrada a los espejos de agua de los Valles."</p>
+        </section>
+       <section class="container contenedor-lugares">
+            <div class="lugares">
+                <div class="lugares-der">
+
+                    <h3>PUNA</h3>
+                    {% load static %}
+                    <img src="{% static 'cac\publica\css\SalinasGrandes.png' %}" alt="Puna Jujeña" class="img-lugares">
+ 
+                     
+                </div>
+                <div class="lugares-izq">
+                    <p>Puna es esplendor, cielos infinitos de aire puro y extensas planicies de 
+                    altura a más de 3600 msnm. </p>
+                    <button><a href="{% url 'proyectos_puna' %}"> Mas Info...</a></button>
+                </div>
+            </div>
+            <div class="lugares">
+                 
+                <div class="lugares-der">
+                    <h3>VALLES</h3>
+                    {% load static %}
+                    <img src="{% static 'cac\publica\css\SSDeJujuy.png' %}" alt="Valles Jujeños" class="img-lugares">
+
+                </div>
+                <div class="lugares-izq">
+                    <p>La zona de los valles ocupa la región centro-sur de la provincia,
+                         donde se desperdigan lugares de ensueño </p>
+                    <button><a href="{% url 'cursos_valle' %}"> Mas Info...</a></button>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="lugares-der">
+                    <h3>QUEBRADA</h3>
+                    {% load static %}
+                    <img src="{% static 'cac\publica\css\Purmamarca.png' %}" alt="Quebrada Jujeña" class="img-lugares">
+
+                </div>
+                <div class="lugares-izq">
+                    <p>Un itinerario cultural de 10.000 años, tierra 
+                        rica en historia y tradiciones,que se remontan a los tiempos precolombinos.</p>
+                    <button><a href="{% url 'cursos_quebrada' %}"> Mas Info...</a></button>
+                </div>
+            </div>
+            <div class="lugares">
+                 
+                <div class="lugares-der">
+                    <h3>YUNGA</h3>
+                    {% load static %}
+                    <img src="{% static 'cac\publica\css\EcoportalDePiedra.png' %}" alt="Yunga Jujeña" class="img-lugares">
+
+                </div>
+                <div class="lugares-izq">
+                    <p>La Ruta Nacional Nº 34 nos conduce a las Yungas jujeñas, 
+                        espacio de contrastes y leyendas.  </p>
+                    <button><a href="{% url 'cursos_yunga' %}"> Mas Info...</a></button>
+                </div>
+            </div>
+       </section>
+       <section class="container contenedor-recomendaciones">
+            <h3 class="h-titulo">¡VIVÍ JUJUY!</h3>
+            {% load static %}
+            <img src="{% static 'cac\publica\css\hombreAltura.jpg' %}" alt="Hombre en la cima de un cerro" >
+
+            <p>Desafiá tus límites y llega a donde jamás imaginaste. Caminatas, trekking, 
+               motociclismo, cabalgatas y ciclismo son algunas de las aventuras que Jujuy 
+               te ofrece...</p>
+       </section>
+       <section class="container contenedor-recomendaciones">
+                <h3 class="h-titulo">CULTURA, TRADICIÓN, HISTORIA...</h3>
+                {% load static %}
+                <img src="{% static 'cac\publica\css\carnaval.jpg' %}" alt="Carnaval de Jujuy" >
+
+                
+       </section>
+{% comment "" %}
+       <section class="container contenedor-recomendaciones">
+       <!-- <section class="i-frames"> -->
+            <h3 class="h-titulo">CARNAVAL...</h3>
+            <div class="i-frames">
+                <iframe  src="https://www.youtube-nocookie.com/embed/2aIkj92m9kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+{% endcomment %}
+    </main>
+    <footer id="footer">
+
+
+        <div class="container piePagina">
+            <h3>CONOCIENDO JUJUY</h3>
+            <p>Un proyecto personal dedicado a 
+                la provincia de Jujuy, Argentina</p>
+            <ul class="pie-sociales">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+            <div class="pie-copyright">
+                <p><a href="#">© 2022 Copyright, </a>  todos los derechos reservados </p>
+            </div>
+        </div>
+    </footer>
+
+
+{% comment "" %}
+
+    <h1>{{ titulo_nombre }}</h1>
+    <p>{{ parametros }}</p>
+    <p>{{ hoy|date:"Y-m-d H:i:s"}}</p>
+    
+    {% if cursos|length > 0 %}
+        <ul>
+            {% for curso in cursos %}
+                <li>
+                    {{ curso.nombre }} - {{ curso.categoria }}
+                    <p>{{ curso.descripcion }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay cursos disponibles</p>
+    {% endif %}
+{% endcomment %}
+    <script src="jujuy/js/main.js" ></script>
+</body>
+</html>

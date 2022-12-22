@@ -1,0 +1,55 @@
+{% extends './base.html' %}
+
+{% block titulo %}Cursos{% endblock titulo %}
+{% block contenidoRegiones %}
+<section class="portadaValle">
+        
+    <div class="contenedor-portada">
+        <h2><b>YALA</b></h2>
+        <p><b> Parque Provicial Potrero de Yala</b></p>
+    </div>
+
+</section>
+{% endblock contenidoRegiones %}
+
+{% block contenido %}
+
+<section class="container jujuy">
+    <h2 class="h-titulo">VALLES</h2>
+    <p>"La zona de los valles ocupa la región centro-sur de la provincia, donde se 
+        desperdigan lugares de ensueño con paisajes espectaculares y un clima de 
+        temperatura media, que la convierten en una zona de estación primaveral 
+        durante casi todo el año."</p>
+</section>
+<div class="regiones">
+    <article class="articulo">
+        <p>   San Salvador de Jujuy muestra profundos contrastes entre estilos 
+            coloniales y modernos dispersados en las calles angostas, que relatan la 
+            historia de un pueblo pujante, alberga numerosos edificios históricos, 
+            que constituyen el testimonio viviente de un pasado glorioso: la Iglesia 
+            Catedral, con su púlpito laminado en oro; la Casa de Gobierno, custodio de 
+            la Bandera legada por el Gral. Manuel Belgrano en la gesta patriótica del 
+            Éxodo Jujeño; el Cabildo; los Museos Histórico y Arqueológico y la Iglesia
+             San Francisco, son algunos testigos de la identidad jujeña.
+        </p>
+        <p>
+            Lugares como Termas de Reyes, ideal para disfrutar de sus aguas 
+            terapéuticas; las Lagunas de Yala, para distenderse en las serenas aguas 
+            de sus espejos, los pintorescos poblados de Ocloyas y Tiraxi, distribuidos
+             en un entorno de variada y densa vegetación casi selvática, invitan al 
+             descanso y al sosiego en un marco de extraordinaria belleza natural.
+        </p>
+        
+    </article>
+    <div id="fotos3">
+
+    </div>
+
+
+{% endblock contenido %}
+
+{% block javascript %}
+{% load static %}
+<script src="{% static 'cac/publica/js/mainSeg.js'%}"></script>
+<script src="{% static 'cac/publica/js/galeria.js'%}"></script>
+{% endblock %}

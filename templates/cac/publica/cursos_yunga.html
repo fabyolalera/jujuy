@@ -1,0 +1,56 @@
+{% extends './base.html' %}
+
+{% block titulo %}Cursos{% endblock titulo %}
+{% block contenidoRegiones %}
+<section class="portadaYunga">
+        
+    <div class="contenedor-portada" >
+        <h2><b>RESERVA NATURAL</b></h2>
+        <p><b> Reserva Natural Eco Portal de Piedra</b></p>
+    </div>
+
+</section>
+{% endblock contenidoRegiones %}
+
+{% block contenido %}
+
+<section class="container jujuy">
+    <h2 class="h-titulo">YUNGA</h2>
+    <p>"La Ruta Nacional Nº 34 nos conduce a las Yungas jujeñas, espacio de contrastes y leyendas. 
+        Dueñas de una amplia gama de microclimas y de variados y diferentes pisos de vegetación, 
+        conforman un ambiente único en el bioclima de Jujuy."</p>
+</section>
+<div class="regiones">
+    <article class="articulo">
+        <p>   Su principal referente, el Parque Nacional Calilegua, con sus 76.306 has. de 
+            nuboselva, es uno de los ambientes protegidos de mayor biodiversidad del norte 
+            argentino, conjuntamente con la Reserva Provincial Las Lancitas. Algunas especies 
+            animales preservadas y en serio peligro de extinción, como el yaguareté, el huemul 
+            y el lobito de río, se mezclan entre la frondosa majestuosidad de su vegetación 
+            con una gran variedad de especies arbóreas (cedro, tipa, cebil, palo amarillo, etc.)
+             que invita al misterio y al asombro.
+        </p>
+        <p>
+            Después de atravesar el Parque Nacional Calilegua por la Ruta Provincial
+             N° 83,  se arriba a los pueblos de San Francisco, Pampichuela, Valle 
+             Grande, Valle Colorado y Santa Ana, que tienen un gran potencial turístico
+              y que son dignos de ser visitados.
+        </p>
+        <p>
+            Las Yungas son un refugio de máxima pureza que ofrece, por sobre todo,
+             el éxtasis de lo auténticamente virgen y natural.
+
+        </p>
+        
+    </article>
+    <div id="fotos4">
+
+    </div>
+
+{% endblock contenido %}
+
+{% block javascript %}
+{% load static %}
+<script src="{% static 'cac/publica/js/mainSeg.js'%}"></script>
+<script src="{% static 'cac/publica/js/galeria.js'%}"></script>
+{% endblock %}

@@ -1,0 +1,483 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+/* font-family: 'Courgette', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/*
+'DINNextLTPro-MediumCond', 'Source Sans Pro', sans-serif;
+a{
+    text-decoration: none;
+}
+*/
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+ 
+}
+img {
+    display: block;
+    max-width: 100%;
+  }
+header{
+    /* background: black; */
+    color: white;
+    padding: 0;
+
+}
+
+.nav-menu{
+    /* background-color: blue; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.menu-ul{
+    list-style-type: none;
+    margin-right: 10px;
+}
+.menu-ul .lista{
+    display: inline-block;
+    padding: 20px 10px;
+}
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    color: rgb(211, 211, 247);
+}
+.logo{
+    margin-left: 10px;
+}
+.icono{
+    height: 40px;
+}
+.menu-div{
+    display: none;
+}
+.menu-linea{
+    width: 20px;
+    height: 3px;
+    background-color: rgb(211, 211, 247);
+    margin-bottom: 4px;
+}
+
+
+ /*portada  */
+.portada{
+    background: url('salinasCamps.jpg') no-repeat center center;
+    position: absolute;
+    min-height: 80vh;
+    color: white;
+    width: 100%;
+  
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.contenedor-portada{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+}
+.contenedor-portada p{
+    line-height: 100%;
+}
+.portadaPuna{
+    background: url('lagunaPozuelos.jpg') no-repeat center center;
+    position: absolute;
+    min-height: 80vh;
+    color: white;
+    width: 100%;
+  
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.portadaQuebrada{
+    background: url('Carnaval-info.jpg') no-repeat center center;
+    position: absolute;
+    min-height: 80vh;
+    color: white;
+    width: 100%;
+  
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.portadaValle{
+    background: url('yala.jpg') no-repeat center center;
+    position: absolute;
+    min-height: 80vh;
+    color: white;
+    width: 100%;
+  
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.portadaYunga{
+    background: url('yunga1.jpg') no-repeat center center;
+    position: absolute;
+    min-height: 80vh;
+    color: white;
+    width: 100%;
+  
+    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+/* ----------- */
+main{
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Courgette', cursive; */
+    color: white;
+    margin-top: 410px;
+}
+
+.jujuy{
+    text-align: center;
+    padding: 20px;
+    max-width: 750px;
+    margin: auto;
+}
+.h-titulo{
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 2.5em;
+    position: relative;
+}
+.h-titulo::before{
+    content: "";
+    width: 200px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: rgba(5, 5, 110, 0.94);
+
+}
+.jujuy p{
+    font-size: 1.2em;
+    color: rgb(211, 211, 247);
+    line-height: 25px;
+}
+
+.articulo{
+    padding: 10px 20px;
+    color: rgb(211, 207, 207);
+    line-height: 25px;
+    text-align: center;
+}
+/* contenedor lugares */
+.contenedor-lugares{
+    /* margin: 20px 0; */
+    margin: 2rem 0;
+    text-align: center;
+
+    align-items: center; 
+}
+.lugares{
+    
+
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.lugares-der{
+
+    position: relative;
+    padding: 0;
+    flex: 70%;
+    width: 100%;
+    height: auto;
+}
+.lugares-izq{
+    padding: 2% 20px;
+    flex: 30%;
+    font-family: 'Courgette', cursive;
+    font-size: 1.2em;
+    color: rgb(211, 207, 207);
+   
+}
+.lugares-izq button{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(211, 207, 207);
+    background-color: black;
+    /* width: 100%; */
+    font-size: 16px;
+ 
+}
+.lugares-izq button:hover{
+    opacity: 0.7;
+}
+.lugares-izq button a{
+    color: rgb(211, 207, 207);
+   text-decoration: none; 
+}
+.lugares-izq button a:hover{
+    color: rgb(211, 211, 247);
+
+    background: #3b3b3b;
+    padding: 18px 24px;
+    transition-property: all; 
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.lugares-der h3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/*regiones*/
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    border: 2px solid rgb(167, 167, 165);
+    border-radius: 5px;
+    margin: 10px;
+    width: 370px;
+    text-align: center;
+}
+.cuerpo{
+    padding: 10px;
+    width: auto;
+}
+
+.tarjeta img{
+    width: auto;
+    border-radius: 5px;
+}
+
+
+/* recomendaciones */
+.contenedor-recomendaciones{
+    margin: 60px auto;
+    max-width: 650px;
+    text-align: center;
+}
+.contenedor-recomendaciones img{
+    /* width: 500px;
+    height: 500px; */
+    background-size: cover;
+    /* object-fit: cover; */
+    margin: auto;
+}
+.contenedor-recomendaciones p{
+    padding: 20px;
+    line-height: 25px;
+    font-size: 1.2em;
+}
+.i-frames{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    padding-top: 56.25%;
+}
+.i-frames iframe{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    bottom: 0;
+    right: 15%;
+    width: 70%;
+    height: 400px;
+    border: 2px solid white;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:  black;
+    height: auto;
+    width: 100vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+}
+.piePagina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.6;
+}
+/* .piePagina h3{
+       
+} */
+.piePagina p{
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+
+}
+.pie-sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding: 0;
+}
+.pie-sociales li{
+    margin: 0 10px;
+}
+.pie-sociales a{
+    text-decoration: none;
+    color: white;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.pie-sociales a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.pie-sociales a:hover i{
+    color: rgb(211, 211, 247);
+}
+.pie-copyright{
+    width: 100vw;
+    padding: 0 20px 0 20px;
+}
+.pie-copyright p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    color: rgb(176, 175, 175);
+}
+.pie-copyright p a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* query */
+@media all and (max-width:768px){
+    .nav-menu{
+        flex-direction: column;
+        position: relative;
+        background:  black;
+        color: white;
+    }
+    .logo{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .menu-div{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .menu-ul{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 0;
+        display: none;
+    }
+    .icono {
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .menu-ul .lista {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid white;
+        
+    }  
+    .logo-a{
+        font-size: 21px;
+        color: white; 
+    }
+    .active{
+        display: block;
+    }
+    /* --- */
+    .portada{
+        position: relative;
+    }
+    .principal{
+        margin-top: 80px;
+    }
+    .puna{
+        margin-top: 550px;
+    }
+    .i-frames iframe{
+        /* width: 70vw; */
+        height: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 520px) {
+    .i-frames{
+        padding-bottom: 20%;
+    }
+    .i-frames iframe{
+        /* width: 100%; */
+        height: 100%;
+    }
+}
+@media (max-width: 991px){
+  
+    .lugares{
+        flex-direction: column;
+       
+    }
+  
+}
+
